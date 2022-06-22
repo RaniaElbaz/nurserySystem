@@ -11,15 +11,3 @@ module.exports.hashPassword = (request, response, next) => {
         .catch(error => next(error))
     });
 }
-
-// module.exports.ComparePassword = (request, response, next) => {
-//     bcrypt.compare(request.body.password, hash)
-//     .then(function(result) {
-//         if(result == true){
-//             next()
-//         }
-//         else{
-//             next(new Error("password unmatched"))
-//         }
-//     });
-// }
